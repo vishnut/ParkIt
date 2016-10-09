@@ -14,6 +14,12 @@
 		27327BDA1BB73D0D00711D8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27327BD81BB73D0D00711D8F /* LaunchScreen.storyboard */; };
 		27327BE51BB73D0D00711D8F /* ParkItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27327BE41BB73D0D00711D8F /* ParkItTests.swift */; };
 		27327BF01BB73D0D00711D8F /* ParkItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27327BEF1BB73D0D00711D8F /* ParkItUITests.swift */; };
+		27327BFE1BB73D3800711D8F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27327BFD1BB73D3800711D8F /* MapKit.framework */; };
+		27327C001BB759E200711D8F /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27327BFF1BB759E200711D8F /* CarViewController.swift */; };
+		27327C021BB759FB00711D8F /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27327C011BB759FB00711D8F /* OtherViewController.swift */; };
+		27327C041BB7909000711D8F /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27327C031BB7909000711D8F /* TableController.swift */; };
+		27327C061BB7C3FD00711D8F /* CellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27327C051BB7C3FD00711D8F /* CellViewController.swift */; };
+		27639A4D1BB83EB4006679B9 /* MessageComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27639A4C1BB83EB4006679B9 /* MessageComp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		27327BEB1BB73D0D00711D8F /* ParkItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27327BEF1BB73D0D00711D8F /* ParkItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkItUITests.swift; sourceTree = "<group>"; };
 		27327BF11BB73D0D00711D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27327BFD1BB73D3800711D8F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		27327BFF1BB759E200711D8F /* CarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		27327C011BB759FB00711D8F /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		27327C031BB7909000711D8F /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		27327C051BB7C3FD00711D8F /* CellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewController.swift; sourceTree = "<group>"; };
+		27639A4C1BB83EB4006679B9 /* MessageComp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageComp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27327BFE1BB73D3800711D8F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 		27327BC31BB73D0D00711D8F = {
 			isa = PBXGroup;
 			children = (
+				27327BFD1BB73D3800711D8F /* MapKit.framework */,
 				27327BCE1BB73D0D00711D8F /* ParkIt */,
 				27327BE31BB73D0D00711D8F /* ParkItTests */,
 				27327BEE1BB73D0D00711D8F /* ParkItUITests */,
@@ -99,10 +113,15 @@
 			children = (
 				27327BCF1BB73D0D00711D8F /* AppDelegate.swift */,
 				27327BD11BB73D0D00711D8F /* ViewController.swift */,
+				27327C031BB7909000711D8F /* TableController.swift */,
+				27327C051BB7C3FD00711D8F /* CellViewController.swift */,
 				27327BD31BB73D0D00711D8F /* Main.storyboard */,
+				27327BFF1BB759E200711D8F /* CarViewController.swift */,
+				27327C011BB759FB00711D8F /* OtherViewController.swift */,
 				27327BD61BB73D0D00711D8F /* Assets.xcassets */,
 				27327BD81BB73D0D00711D8F /* LaunchScreen.storyboard */,
 				27327BDB1BB73D0D00711D8F /* Info.plist */,
+				27639A4C1BB83EB4006679B9 /* MessageComp.swift */,
 			);
 			path = ParkIt;
 			sourceTree = "<group>";
@@ -193,6 +212,14 @@
 					27327BCB1BB73D0D00711D8F = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = BZUT6R4FFD;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					27327BDF1BB73D0D00711D8F = {
 						CreatedOnToolsVersion = 7.0;
@@ -258,7 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27639A4D1BB83EB4006679B9 /* MessageComp.swift in Sources */,
+				27327C061BB7C3FD00711D8F /* CellViewController.swift in Sources */,
 				27327BD21BB73D0D00711D8F /* ViewController.swift in Sources */,
+				27327C021BB759FB00711D8F /* OtherViewController.swift in Sources */,
+				27327C001BB759E200711D8F /* CarViewController.swift in Sources */,
+				27327C041BB7909000711D8F /* TableController.swift in Sources */,
 				27327BD01BB73D0D00711D8F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,10 +431,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ParkIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Vishnu-Thiagarajan.ParkIt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -410,10 +445,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ParkIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Vishnu-Thiagarajan.ParkIt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -484,6 +522,7 @@
 				27327BF61BB73D0D00711D8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27327BF71BB73D0D00711D8F /* Build configuration list for PBXNativeTarget "ParkItTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +531,7 @@
 				27327BF91BB73D0D00711D8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27327BFA1BB73D0D00711D8F /* Build configuration list for PBXNativeTarget "ParkItUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +540,7 @@
 				27327BFC1BB73D0D00711D8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
